@@ -1,0 +1,41 @@
+@keyframes ani {
+    0%{
+        transform: scaleY(0.2);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+.card-body{
+    position: relative;
+}
+.main{
+    animation: ani;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    width:450px
+}
+.loading{
+    position: absolute;
+  height:100%;
+  left:0;
+  width: 100%;
+  top:0;
+
+}
+@media only screen and (max-width: 600px)  {
+       .main{
+        width:80%;
+       }
+       .card-body{
+    position: static;
+}
+}
+@media only screen and (max-height: 600px) {
+ .main{
+        height:100px;
+       }
+       .card-body{
+          position: fixed;
+       }
+}

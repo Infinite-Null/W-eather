@@ -1,0 +1,11 @@
+
+body{
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 99.7%;
+    width: 99.7%;
+    background: #5F4B8BFF;
+}
